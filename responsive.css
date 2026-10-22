@@ -1,0 +1,392 @@
+@media (max-width:768px){
+
+.top-header{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    height:auto;
+    padding:10px;
+    gap:10px;
+}
+
+/* First Row */
+
+.logo{
+    order:1;
+}
+img {
+    width: 70px;
+}
+
+.location{
+    order:2;
+}
+.location {
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+}
+.location strong {
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+.account{
+    order:3;
+}
+.account, .orders {
+    display: flex;
+    flex-direction: column;
+    font-size: 9px;
+    cursor: pointer;
+}
+.account strong, .orders strong {
+    font-size: 10px;
+}
+
+.cart{
+    order:4;
+}
+.cart {
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lang{
+    display:none;
+}
+
+.orders{
+    display:none;
+}
+
+/* Second Row */
+
+.search{
+    order:5;
+    width:100%;
+    height:40px;
+    margin-top:5px;
+}
+
+.search select{
+    width:60px;
+}
+
+.search input{
+    flex:1;
+}
+
+.search button{
+    width:50px;
+}
+
+/* Navigation */
+
+nav{
+    width:100%;
+    height:42px;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+nav::-webkit-scrollbar{
+    display:none;
+}
+
+nav ul{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+   
+    margin:0;
+    padding:0 10px;
+    white-space:nowrap;
+}
+
+nav ul li{
+    margin-right:18px;
+    flex-shrink:0;
+     font-size: 9px;
+}
+}
+
+
+/* ---------- Tablet ---------- */
+@media (max-width:992px){
+
+.carousel{
+    width:100%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    margin-bottom:180px;
+}
+
+.products{
+    margin-top:-180px;
+    padding:20px;
+    gap:15px;
+}
+
+.products2,
+.products3,
+.products4,
+.products5{
+    padding:20px;
+    gap:15px;
+    margin-top:0;
+}
+
+.card,
+.single-card{
+    width:48%;
+    height:auto;
+    min-height:330px;
+}
+
+.single-card img{
+    height:260px;
+}
+
+.grid{
+    gap:12px;
+}
+
+.item img{
+    height:110px;
+}
+
+.mainsec,
+.mainsec2,
+.mainsec3,
+.mainsec4,
+.mainsec5,
+.mainsec6,
+.mainsec7{
+    width:95%;
+    padding:15px;
+}
+
+.mainsec-header h2{
+    font-size:24px;
+}
+
+.product-row{
+    overflow-x:auto;
+    gap:15px;
+    scrollbar-width:none;
+}
+
+.product-row::-webkit-scrollbar{
+    display:none;
+}
+
+.imagsec{
+    width:150px;
+    height:150px;
+}
+
+.imagsec img{
+    width:150px;
+}
+
+}
+
+
+/* --- Mobile--- */
+@media (max-width:768px){
+
+.carousel{
+    width:100%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    display:none;
+    margin-bottom:  20px;
+}
+
+.products{
+    margin-top:20px;
+    padding:15px;
+    gap:15px;
+}
+
+.products2,
+.products3,
+.products4,
+.products5{
+    padding:15px;
+    gap:15px;
+    margin-top:10px;
+}
+
+.card,
+.single-card{
+    width:100%;
+    max-width:380px;
+    height:auto;
+    margin:auto;
+}
+
+.card h2,
+.single-card h2{
+    font-size:20px;
+}
+
+.grid{
+    gap:10px;
+}
+
+.item img{
+    height:110px;
+}
+
+.single-card img{
+    height:240px;
+}
+
+.mainsec,
+.mainsec2,
+.mainsec3,
+.mainsec4,
+.mainsec5,
+.mainsec6,
+.mainsec7{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+}
+
+.mainsec-header h2{
+    font-size:22px;
+}
+
+.product-row{
+    display:flex;
+    overflow-x:auto;
+    gap:12px;
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+}
+
+.product-row::-webkit-scrollbar{
+    display:none;
+}
+
+.imagsec{
+    width:120px;
+    height:120px;
+    flex-shrink:0;
+}
+
+.imagsec img{
+    width:120px;
+}
+
+.sendemail{
+    padding:20px 15px;
+}
+
+.content h2{
+    font-size:24px;
+}
+
+.signin-btn{
+    width:90%;
+}
+
+.footer{
+    flex-wrap:wrap;
+    justify-content:center;
+    text-align:center;
+}
+
+.box{
+    width:100%;
+    margin-bottom:25px;
+    align-items:center;
+}
+
+}
+
+
+/* ---Small Mobile ---- */
+@media (max-width:480px){
+
+.products,
+.products2,
+.products3,
+.products4,
+.products5{
+    padding:10px;
+    gap:10px;
+}
+
+.card,
+.single-card{
+    padding:15px;
+}
+
+.card h2,
+.single-card h2{
+    font-size:18px;
+}
+
+.grid{
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+}
+
+.item img{
+    height:90px;
+}
+
+.item p{
+    font-size:12px;
+}
+
+.single-card img{
+    height:220px;
+}
+
+.mainsec-header h2{
+    font-size:20px;
+}
+
+.imagsec{
+    width:100px;
+    height:100px;
+}
+
+.imagsec img{
+    width:100px;
+}
+
+.content h2{
+    font-size:20px;
+}
+
+.signin-btn{
+    width:100%;
+    font-size:15px;
+}
+
+.footer{
+    padding:25px 15px;
+}
+
+.box h3{
+    font-size:16px;
+}
+
+.box a{
+    font-size:13px;
+}
+
+}
